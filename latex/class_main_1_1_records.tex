@@ -1,0 +1,120 @@
+\hypertarget{class_main_1_1_records}{}\section{Main.\+Records Class Reference}
+\label{class_main_1_1_records}\index{Main.\+Records@{Main.\+Records}}
+Inheritance diagram for Main.\+Records\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_1_1_records}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_1_1_records_a82bb250f41e6d1cbad9c9d520772d238}{Records} (String name, int score)
+\item 
+void \hyperlink{class_main_1_1_records_ac1c5fc940f98770509ba2bf237e5ea0b}{write\+Object} (Object\+Output\+Stream oos)
+\item 
+void \hyperlink{class_main_1_1_records_a78fec3236933217b223e93e5c6eb34d7}{read\+Object} (Object\+Input\+Stream ois)
+\item 
+String \hyperlink{class_main_1_1_records_ac6f93eb98cdd21d52294c4d90dc76d99}{get\+Name} ()
+\item 
+int \hyperlink{class_main_1_1_records_a97027b0438ca6123ccda8330987d0174}{get\+Score} ()
+\item 
+int \hyperlink{class_main_1_1_records_ab5fde5dd0ad92223abbed30c7b22f607}{compare\+To} (\hyperlink{class_main_1_1_records}{Records} r)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String {\bfseries name}\hypertarget{class_main_1_1_records_a3658db92b27c25c237f903c01afa6443}{}\label{class_main_1_1_records_a3658db92b27c25c237f903c01afa6443}
+
+\item 
+int {\bfseries score}\hypertarget{class_main_1_1_records_ad514b8ec841175bb98b168c63753f493}{}\label{class_main_1_1_records_ad514b8ec841175bb98b168c63753f493}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lényegében egy segédosztály, amely a ranglistánk fájlba írását, illetve fájlból történő beolvasását támogatja. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+::\+Records@{Main\+::\+Records}!Records@{Records}}
+\index{Records@{Records}!Main\+::\+Records@{Main\+::\+Records}}
+\subsubsection[{\texorpdfstring{Records(\+String name, int score)}{Records(String name, int score)}}]{\setlength{\rightskip}{0pt plus 5cm}Main.\+Records.\+Records (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{int}]{score}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_records_a82bb250f41e6d1cbad9c9d520772d238}{}\label{class_main_1_1_records_a82bb250f41e6d1cbad9c9d520772d238}
+Az osztályunk konstruktora, meghatározza a paramétereit, a megadott értékek alapján. 
+\begin{DoxyParams}{Parameters}
+{\em name} & A játékos nevét tárolja. \\
+\hline
+{\em score} & A játékoshoz és az adott játékhoz tartozó időt méri \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Main\+::\+Records@{Main\+::\+Records}!compare\+To@{compare\+To}}
+\index{compare\+To@{compare\+To}!Main\+::\+Records@{Main\+::\+Records}}
+\subsubsection[{\texorpdfstring{compare\+To(\+Records r)}{compareTo(Records r)}}]{\setlength{\rightskip}{0pt plus 5cm}int Main.\+Records.\+compare\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf Records}}]{r}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_records_ab5fde5dd0ad92223abbed30c7b22f607}{}\label{class_main_1_1_records_ab5fde5dd0ad92223abbed30c7b22f607}
+Az adatok count paramétere szerinti sorrendezett tárolást támogató metódus. 
+\begin{DoxyParams}{Parameters}
+{\em r} & Egy Record típusú változó \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1, ha az aktuális idő nagyobb mint amihez épp hasonlítjuk 1, ha kisebb 0, különben. 
+\end{DoxyReturn}
+\index{Main\+::\+Records@{Main\+::\+Records}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Main\+::\+Records@{Main\+::\+Records}}
+\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}String Main.\+Records.\+get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_records_ac6f93eb98cdd21d52294c4d90dc76d99}{}\label{class_main_1_1_records_ac6f93eb98cdd21d52294c4d90dc76d99}
+Getter\+: a name paraméter értékével tér vissza. \begin{DoxyReturn}{Returns}
+name -\/ Visszatér a játékos nevével. 
+\end{DoxyReturn}
+\index{Main\+::\+Records@{Main\+::\+Records}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!Main\+::\+Records@{Main\+::\+Records}}
+\subsubsection[{\texorpdfstring{get\+Score()}{getScore()}}]{\setlength{\rightskip}{0pt plus 5cm}int Main.\+Records.\+get\+Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_records_a97027b0438ca6123ccda8330987d0174}{}\label{class_main_1_1_records_a97027b0438ca6123ccda8330987d0174}
+Getter\+: a score paraméter értékével tér vissza. \begin{DoxyReturn}{Returns}
+score -\/ Visszatér a játékos idejével. 
+\end{DoxyReturn}
+\index{Main\+::\+Records@{Main\+::\+Records}!read\+Object@{read\+Object}}
+\index{read\+Object@{read\+Object}!Main\+::\+Records@{Main\+::\+Records}}
+\subsubsection[{\texorpdfstring{read\+Object(\+Object\+Input\+Stream ois)}{readObject(ObjectInputStream ois)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Records.\+read\+Object (
+\begin{DoxyParamCaption}
+\item[{Object\+Input\+Stream}]{ois}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_records_a78fec3236933217b223e93e5c6eb34d7}{}\label{class_main_1_1_records_a78fec3236933217b223e93e5c6eb34d7}
+Egy adott rekord (mint egyed/elem) fájlból történő beolvasását valósítja meg. 
+\begin{DoxyParams}{Parameters}
+{\em ois} & Object\+Input\+Stream paraméter, a fájlból olvasást támogatja. \\
+\hline
+\end{DoxyParams}
+\index{Main\+::\+Records@{Main\+::\+Records}!write\+Object@{write\+Object}}
+\index{write\+Object@{write\+Object}!Main\+::\+Records@{Main\+::\+Records}}
+\subsubsection[{\texorpdfstring{write\+Object(\+Object\+Output\+Stream oos)}{writeObject(ObjectOutputStream oos)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Records.\+write\+Object (
+\begin{DoxyParamCaption}
+\item[{Object\+Output\+Stream}]{oos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_records_ac1c5fc940f98770509ba2bf237e5ea0b}{}\label{class_main_1_1_records_ac1c5fc940f98770509ba2bf237e5ea0b}
+A kapott elemhez tartozó adatok fájlba írását valósítja meg ez a metódus. 
+\begin{DoxyParams}{Parameters}
+{\em oos} & Object\+Output\+Stream paraméter, a fájlba írást támogatja. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Egyetem/\+I\+I. ev/\+I. felev/\+Java/\+H\+F Break Bricks/src/\+Main/Records.\+java\end{DoxyCompactItemize}

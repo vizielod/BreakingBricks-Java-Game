@@ -1,0 +1,90 @@
+\hypertarget{class_main_1_1_paddle}{}\section{Main.\+Paddle Class Reference}
+\label{class_main_1_1_paddle}\index{Main.\+Paddle@{Main.\+Paddle}}
+Inheritance diagram for Main.\+Paddle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_1_1_paddle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_1_1_paddle_a06370cc44c3277525cc7f276bfc1d601}{Paddle} ()
+\item 
+void \hyperlink{class_main_1_1_paddle_ade5930feef33924d190242dfd90e5bc9}{move} ()
+\item 
+void \hyperlink{class_main_1_1_paddle_adfc1e29e1cdd3df6b4caf75f99471773}{key\+Pressed} (Key\+Event event)
+\item 
+void \hyperlink{class_main_1_1_paddle_ace7a033051fd52aa4e59f53d9a109be4}{key\+Released} (Key\+Event event)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_1_1_paddle_a5d6b38c5dc37a6b3f22c64521daf8e99}{reset\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries dx}\hypertarget{class_main_1_1_paddle_af47d4ee4b9d59a39273cc3ec9c8c5a16}{}\label{class_main_1_1_paddle_af47d4ee4b9d59a39273cc3ec9c8c5a16}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A játékos által irányított \hyperlink{class_main_1_1_paddle}{Paddle} (ütő) osztály, az irányításához és beállításához szükséges metódusokkal. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+::\+Paddle@{Main\+::\+Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Main\+::\+Paddle@{Main\+::\+Paddle}}
+\subsubsection[{\texorpdfstring{Paddle()}{Paddle()}}]{\setlength{\rightskip}{0pt plus 5cm}Main.\+Paddle.\+Paddle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_paddle_a06370cc44c3277525cc7f276bfc1d601}{}\label{class_main_1_1_paddle_a06370cc44c3277525cc7f276bfc1d601}
+A \hyperlink{class_main_1_1_paddle}{Paddle} (utő) osztály konstruktora. az egyedhez rendeli a képet, valamint beállítja a kiindulási pozicióját. 
+
+\subsection{Member Function Documentation}
+\index{Main\+::\+Paddle@{Main\+::\+Paddle}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!Main\+::\+Paddle@{Main\+::\+Paddle}}
+\subsubsection[{\texorpdfstring{key\+Pressed(\+Key\+Event event)}{keyPressed(KeyEvent event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Paddle.\+key\+Pressed (
+\begin{DoxyParamCaption}
+\item[{Key\+Event}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_paddle_adfc1e29e1cdd3df6b4caf75f99471773}{}\label{class_main_1_1_paddle_adfc1e29e1cdd3df6b4caf75f99471773}
+Figyeli, hogy melyik gomb lett lenyomva. Balra nyíl esetén balra irányítja az ütőt. Jobbra nyíl lenyomása esetén pedig jobbra. 
+\begin{DoxyParams}{Parameters}
+{\em event} & Key\+Event beépített osztály paramétere \\
+\hline
+\end{DoxyParams}
+\index{Main\+::\+Paddle@{Main\+::\+Paddle}!key\+Released@{key\+Released}}
+\index{key\+Released@{key\+Released}!Main\+::\+Paddle@{Main\+::\+Paddle}}
+\subsubsection[{\texorpdfstring{key\+Released(\+Key\+Event event)}{keyReleased(KeyEvent event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Paddle.\+key\+Released (
+\begin{DoxyParamCaption}
+\item[{Key\+Event}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_paddle_ace7a033051fd52aa4e59f53d9a109be4}{}\label{class_main_1_1_paddle_ace7a033051fd52aa4e59f53d9a109be4}
+Figyeli a lenyomott billenytyű felengedését. Ha felengedtük a lenyomott gombot, akkor megáll az ütő egyhelyben. 
+\begin{DoxyParams}{Parameters}
+{\em event} & Key\+Event beépített osztály paramétere \\
+\hline
+\end{DoxyParams}
+\index{Main\+::\+Paddle@{Main\+::\+Paddle}!move@{move}}
+\index{move@{move}!Main\+::\+Paddle@{Main\+::\+Paddle}}
+\subsubsection[{\texorpdfstring{move()}{move()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Paddle.\+move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_paddle_ade5930feef33924d190242dfd90e5bc9}{}\label{class_main_1_1_paddle_ade5930feef33924d190242dfd90e5bc9}
+Az utő mozgását szabályozza. Kizárólag x tengely szerint tud működni, és nem tud kimenni az ablakból. A szélénél megütközik. \index{Main\+::\+Paddle@{Main\+::\+Paddle}!reset\+State@{reset\+State}}
+\index{reset\+State@{reset\+State}!Main\+::\+Paddle@{Main\+::\+Paddle}}
+\subsubsection[{\texorpdfstring{reset\+State()}{resetState()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Paddle.\+reset\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_1_1_paddle_a5d6b38c5dc37a6b3f22c64521daf8e99}{}\label{class_main_1_1_paddle_a5d6b38c5dc37a6b3f22c64521daf8e99}
+Visszaállítja az ütő koordinátáit a kezdőpozícióba. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Egyetem/\+I\+I. ev/\+I. felev/\+Java/\+H\+F Break Bricks/src/\+Main/Paddle.\+java\end{DoxyCompactItemize}

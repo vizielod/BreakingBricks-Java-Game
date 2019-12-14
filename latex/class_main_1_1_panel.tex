@@ -1,0 +1,165 @@
+\hypertarget{class_main_1_1_panel}{}\section{Main.\+Panel Class Reference}
+\label{class_main_1_1_panel}\index{Main.\+Panel@{Main.\+Panel}}
+Inheritance diagram for Main.\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_1_1_panel}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_main_1_1_panel_1_1_schedule_task}{Schedule\+Task}
+\item 
+class \hyperlink{class_main_1_1_panel_1_1_t_adapter}{T\+Adapter}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_1_1_panel_a1e24432e564f9ce3ba9256b62b747f49}{Panel} ()
+\item 
+void \hyperlink{class_main_1_1_panel_a43135c9d6be14c228f7c530613f9fd87}{add\+Notify} ()
+\item 
+void \hyperlink{class_main_1_1_panel_a99b5a8bb204915a0fe15c62762434838}{create} ()
+\item 
+void \hyperlink{class_main_1_1_panel_a6903271f2f5062667ff01b3d1d748cb7}{paint\+Component} (Graphics g)
+\item 
+void \hyperlink{class_main_1_1_panel_a4abb223924af2b3ff64bae87a74644bf}{game\+Over} (Graphics2D g2d)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \hyperlink{class_main_1_1_records}{Records} $>$ {\bfseries records} = new Array\+List$<$$>$()\hypertarget{class_main_1_1_panel_a1316464998129458ce372c8148dca5c6}{}\label{class_main_1_1_panel_a1316464998129458ce372c8148dca5c6}
+
+\item 
+int {\bfseries count} = 0\hypertarget{class_main_1_1_panel_a0e04764160c5a402424d3ab67aa32bc9}{}\label{class_main_1_1_panel_a0e04764160c5a402424d3ab67aa32bc9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_1_1_panel_a765d0ade3fdbb19e9521086296e50655}{init\+Game} ()
+\item 
+void \hyperlink{class_main_1_1_panel_ab9cc3da060f155580e32bbd8cec3b159}{draw\+Things} (Graphics2D g2d)
+\item 
+void \hyperlink{class_main_1_1_panel_a533066171c505729288775a25d0e2b8b}{stop\+Game} ()
+\item 
+void \hyperlink{class_main_1_1_panel_aab0094c5b9b7af46239e23dd646e2dc9}{check\+Collision} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_1_1_ball}{Ball} {\bfseries ball}\hypertarget{class_main_1_1_panel_a99783cc33bc9f6afba73d36605d7b391}{}\label{class_main_1_1_panel_a99783cc33bc9f6afba73d36605d7b391}
+
+\item 
+String {\bfseries message} = \char`\"{}Game Over\char`\"{}\hypertarget{class_main_1_1_panel_a426ef03a02527f18a2bb122c623f9dd1}{}\label{class_main_1_1_panel_a426ef03a02527f18a2bb122c623f9dd1}
+
+\item 
+Timer {\bfseries timer}\hypertarget{class_main_1_1_panel_a8a2b9dd3079d409d03ca212ef3eb98df}{}\label{class_main_1_1_panel_a8a2b9dd3079d409d03ca212ef3eb98df}
+
+\item 
+Timer {\bfseries timer2}\hypertarget{class_main_1_1_panel_a749ae740aab86aaf62e5a76009b60978}{}\label{class_main_1_1_panel_a749ae740aab86aaf62e5a76009b60978}
+
+\item 
+\hyperlink{class_main_1_1_brick}{Brick} {\bfseries bricks} \mbox{[}$\,$\mbox{]}\hypertarget{class_main_1_1_panel_acafb3c641a56dc6e3c60bbf61c4b160d}{}\label{class_main_1_1_panel_acafb3c641a56dc6e3c60bbf61c4b160d}
+
+\item 
+\hyperlink{class_main_1_1_paddle}{Paddle} {\bfseries paddle}\hypertarget{class_main_1_1_panel_a7732f40ed71e4760c0d3e42cb29ebd31}{}\label{class_main_1_1_panel_a7732f40ed71e4760c0d3e42cb29ebd31}
+
+\item 
+boolean {\bfseries ingame} = true\hypertarget{class_main_1_1_panel_a22f6b9585a0179a20a84f5d16a335489}{}\label{class_main_1_1_panel_a22f6b9585a0179a20a84f5d16a335489}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Ez a \hyperlink{class_main_1_1_panel}{Panel} osztály, amely lényegében kiíratja az objektumokat a képernyőre, figyeli azok viselkedését, és ezek alapján folyamatosan újrarajzolja őket. Lényegében ez az osztály vezérli a játék működését. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+::\+Panel@{Main\+::\+Panel}!Panel@{Panel}}
+\index{Panel@{Panel}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{Panel()}{Panel()}}]{\setlength{\rightskip}{0pt plus 5cm}Main.\+Panel.\+Panel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_panel_a1e24432e564f9ce3ba9256b62b747f49}{}\label{class_main_1_1_panel_a1e24432e564f9ce3ba9256b62b747f49}
+Az osztály konstruktora, meghívja az inicialisáló metódust. 
+
+\subsection{Member Function Documentation}
+\index{Main\+::\+Panel@{Main\+::\+Panel}!add\+Notify@{add\+Notify}}
+\index{add\+Notify@{add\+Notify}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{add\+Notify()}{addNotify()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+add\+Notify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_panel_a43135c9d6be14c228f7c530613f9fd87}{}\label{class_main_1_1_panel_a43135c9d6be14c228f7c530613f9fd87}
+Meghívja a \hyperlink{class_main_1_1_panel_a99b5a8bb204915a0fe15c62762434838}{create()} függvényt. \index{Main\+::\+Panel@{Main\+::\+Panel}!check\+Collision@{check\+Collision}}
+\index{check\+Collision@{check\+Collision}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{check\+Collision()}{checkCollision()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+check\+Collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_1_1_panel_aab0094c5b9b7af46239e23dd646e2dc9}{}\label{class_main_1_1_panel_aab0094c5b9b7af46239e23dd646e2dc9}
+Vizsgálja a játék folyamata közben történt eseményeket. Ha téglámak ötküzik, akkor eltűnteti az adott téglát, a labda pedig visszapattan a megváltott iránya szerint. Ha az ütőnek ütközik, akkor is visszapattan, közben megváltoztatja irányát. Amennyiben a labda eléri az ablak alját, a játék leáll, és a játékosunk veszített. \index{Main\+::\+Panel@{Main\+::\+Panel}!create@{create}}
+\index{create@{create}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{create()}{create()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_panel_a99b5a8bb204915a0fe15c62762434838}{}\label{class_main_1_1_panel_a99b5a8bb204915a0fe15c62762434838}
+Létrehozza a játékhoz szükséges labdát, ütőt, valamint téglákat, azok helyének meghatározásával. \index{Main\+::\+Panel@{Main\+::\+Panel}!draw\+Things@{draw\+Things}}
+\index{draw\+Things@{draw\+Things}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{draw\+Things(\+Graphics2\+D g2d)}{drawThings(Graphics2D g2d)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+draw\+Things (
+\begin{DoxyParamCaption}
+\item[{Graphics2D}]{g2d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_1_1_panel_ab9cc3da060f155580e32bbd8cec3b159}{}\label{class_main_1_1_panel_ab9cc3da060f155580e32bbd8cec3b159}
+Kirajzolja a képernyőre a megfelelő ablakba, a megfelelő helyekre a játék objektumait. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & A képernyőre történő kiírást támogatja. \\
+\hline
+\end{DoxyParams}
+\index{Main\+::\+Panel@{Main\+::\+Panel}!game\+Over@{game\+Over}}
+\index{game\+Over@{game\+Over}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{game\+Over(\+Graphics2\+D g2d)}{gameOver(Graphics2D g2d)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+game\+Over (
+\begin{DoxyParamCaption}
+\item[{Graphics2D}]{g2d}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_panel_a4abb223924af2b3ff64bae87a74644bf}{}\label{class_main_1_1_panel_a4abb223924af2b3ff64bae87a74644bf}
+A játék végkimenetele alapján szabályozza, hogy mi történjen azt követően. Ha a játékos veszít, akkor egy \char`\"{}\+Sajnáljuk ön veszített\char`\"{} felirat fogadja, majd lehetősége van új játék indítására. Amennyiben a játékos sikeresen vette az akadályokat. Akkor egy \char`\"{}\+Victory\char`\"{} felirat után megadhatja a nevét, amelyet a program egy ranglistába tárol a játékidő alapján. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & A képernyőre történő kiírást támogatja. \\
+\hline
+\end{DoxyParams}
+\index{Main\+::\+Panel@{Main\+::\+Panel}!init\+Game@{init\+Game}}
+\index{init\+Game@{init\+Game}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{init\+Game()}{initGame()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+init\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_1_1_panel_a765d0ade3fdbb19e9521086296e50655}{}\label{class_main_1_1_panel_a765d0ade3fdbb19e9521086296e50655}
+Ez a metódus inicializálja a játékhoz szökséges változókat. Megadja a téglák számát, elindít egy belső timert, vagyis esetünkben kettőt. Egyiket a játék periódusidejével, egy másikat pedig 1000ms -\/os periódusidővel, hogy meg tudjuk határozni a játékos játékban töltött idejét. \index{Main\+::\+Panel@{Main\+::\+Panel}!paint\+Component@{paint\+Component}}
+\index{paint\+Component@{paint\+Component}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{paint\+Component(\+Graphics g)}{paintComponent(Graphics g)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+paint\+Component (
+\begin{DoxyParamCaption}
+\item[{Graphics}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_panel_a6903271f2f5062667ff01b3d1d748cb7}{}\label{class_main_1_1_panel_a6903271f2f5062667ff01b3d1d748cb7}
+Ha játékban vagyunk, akkor hívja a \hyperlink{class_main_1_1_panel_ab9cc3da060f155580e32bbd8cec3b159}{draw\+Things()} metódust, ha a játéknak vége akkor pedig a \hyperlink{class_main_1_1_panel_a4abb223924af2b3ff64bae87a74644bf}{game\+Over()} metódust. 
+\begin{DoxyParams}{Parameters}
+{\em g} & A képernyőre történő kiírást támogatja. \\
+\hline
+\end{DoxyParams}
+\index{Main\+::\+Panel@{Main\+::\+Panel}!stop\+Game@{stop\+Game}}
+\index{stop\+Game@{stop\+Game}!Main\+::\+Panel@{Main\+::\+Panel}}
+\subsubsection[{\texorpdfstring{stop\+Game()}{stopGame()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Panel.\+stop\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_1_1_panel_a533066171c505729288775a25d0e2b8b}{}\label{class_main_1_1_panel_a533066171c505729288775a25d0e2b8b}
+Leállítja a játékot. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Egyetem/\+I\+I. ev/\+I. felev/\+Java/\+H\+F Break Bricks/src/\+Main/Panel.\+java\end{DoxyCompactItemize}

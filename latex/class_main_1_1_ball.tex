@@ -1,0 +1,117 @@
+\hypertarget{class_main_1_1_ball}{}\section{Main.\+Ball Class Reference}
+\label{class_main_1_1_ball}\index{Main.\+Ball@{Main.\+Ball}}
+Inheritance diagram for Main.\+Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_1_1_ball}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_1_1_ball_a580f1396ea60ed222785d87ae163c5a0}{Ball} ()
+\item 
+void \hyperlink{class_main_1_1_ball_a00adb8edbc60dacdec6cfac1dd686871}{move} ()
+\item 
+void \hyperlink{class_main_1_1_ball_a0574633ff91fa6182f8319472208610e}{set\+X\+Direction} (int x)
+\item 
+int \hyperlink{class_main_1_1_ball_acc35e91c14a087781c30d4ef07ed4883}{get\+X\+Direction} ()
+\item 
+void \hyperlink{class_main_1_1_ball_a707727e3e5c6fcdb2d06ff438beb7029}{set\+Y\+Direction} (int y)
+\item 
+int \hyperlink{class_main_1_1_ball_affc1081f609c10e7897ee2da26c81dff}{get\+Y\+Direction} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_1_1_ball_aadbc2f06340363bc41ee7f7646f90460}{reset\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries xdirection}\hypertarget{class_main_1_1_ball_a45d26a9c6639a1b43bf69b983bd70456}{}\label{class_main_1_1_ball_a45d26a9c6639a1b43bf69b983bd70456}
+
+\item 
+int {\bfseries ydirection}\hypertarget{class_main_1_1_ball_af586900d4b05b81bc64245a77bf49955}{}\label{class_main_1_1_ball_af586900d4b05b81bc64245a77bf49955}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A labda (\hyperlink{class_main_1_1_ball}{Ball}) elem osztálya. Amely beállítja a labda kiindulási irányát, mozgását, valamint a megfelelő képet hozzárendeli az egyedhez. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+::\+Ball@{Main\+::\+Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Main\+::\+Ball@{Main\+::\+Ball}}
+\subsubsection[{\texorpdfstring{Ball()}{Ball()}}]{\setlength{\rightskip}{0pt plus 5cm}Main.\+Ball.\+Ball (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_ball_a580f1396ea60ed222785d87ae163c5a0}{}\label{class_main_1_1_ball_a580f1396ea60ed222785d87ae163c5a0}
+A \hyperlink{class_main_1_1_ball}{Ball} osztály konstruktora, megadja a labda kiindulási irányát, valamint betölti a megfelelő képet. 
+
+\subsection{Member Function Documentation}
+\index{Main\+::\+Ball@{Main\+::\+Ball}!get\+X\+Direction@{get\+X\+Direction}}
+\index{get\+X\+Direction@{get\+X\+Direction}!Main\+::\+Ball@{Main\+::\+Ball}}
+\subsubsection[{\texorpdfstring{get\+X\+Direction()}{getXDirection()}}]{\setlength{\rightskip}{0pt plus 5cm}int Main.\+Ball.\+get\+X\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_ball_acc35e91c14a087781c30d4ef07ed4883}{}\label{class_main_1_1_ball_acc35e91c14a087781c30d4ef07ed4883}
+Az aktuális x szerinti iránnyal tér vissza. \begin{DoxyReturn}{Returns}
+xdirection -\/ x tengely szerinti irány 
+\end{DoxyReturn}
+\index{Main\+::\+Ball@{Main\+::\+Ball}!get\+Y\+Direction@{get\+Y\+Direction}}
+\index{get\+Y\+Direction@{get\+Y\+Direction}!Main\+::\+Ball@{Main\+::\+Ball}}
+\subsubsection[{\texorpdfstring{get\+Y\+Direction()}{getYDirection()}}]{\setlength{\rightskip}{0pt plus 5cm}int Main.\+Ball.\+get\+Y\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_ball_affc1081f609c10e7897ee2da26c81dff}{}\label{class_main_1_1_ball_affc1081f609c10e7897ee2da26c81dff}
+Az aktuális y szerinti iránnyal tér vissza. \begin{DoxyReturn}{Returns}
+ydirection -\/ y tengely szerinti irány 
+\end{DoxyReturn}
+\index{Main\+::\+Ball@{Main\+::\+Ball}!move@{move}}
+\index{move@{move}!Main\+::\+Ball@{Main\+::\+Ball}}
+\subsubsection[{\texorpdfstring{move()}{move()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Ball.\+move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_ball_a00adb8edbc60dacdec6cfac1dd686871}{}\label{class_main_1_1_ball_a00adb8edbc60dacdec6cfac1dd686871}
+A labda mozgását szabályozó metódus. Ha a labda falnak ütközik, akkor visszapattan. \index{Main\+::\+Ball@{Main\+::\+Ball}!reset\+State@{reset\+State}}
+\index{reset\+State@{reset\+State}!Main\+::\+Ball@{Main\+::\+Ball}}
+\subsubsection[{\texorpdfstring{reset\+State()}{resetState()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Ball.\+reset\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_1_1_ball_aadbc2f06340363bc41ee7f7646f90460}{}\label{class_main_1_1_ball_aadbc2f06340363bc41ee7f7646f90460}
+Visszaállítja a labdát a kezdő pozicióba. \index{Main\+::\+Ball@{Main\+::\+Ball}!set\+X\+Direction@{set\+X\+Direction}}
+\index{set\+X\+Direction@{set\+X\+Direction}!Main\+::\+Ball@{Main\+::\+Ball}}
+\subsubsection[{\texorpdfstring{set\+X\+Direction(int x)}{setXDirection(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Ball.\+set\+X\+Direction (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_ball_a0574633ff91fa6182f8319472208610e}{}\label{class_main_1_1_ball_a0574633ff91fa6182f8319472208610e}
+Beállítja a labda x tengely menti irányát az átvett paraméter szerint. 
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ A paraméter ami meghatározza az xdirection értékét. \\
+\hline
+\end{DoxyParams}
+\index{Main\+::\+Ball@{Main\+::\+Ball}!set\+Y\+Direction@{set\+Y\+Direction}}
+\index{set\+Y\+Direction@{set\+Y\+Direction}!Main\+::\+Ball@{Main\+::\+Ball}}
+\subsubsection[{\texorpdfstring{set\+Y\+Direction(int y)}{setYDirection(int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main.\+Ball.\+set\+Y\+Direction (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_1_1_ball_a707727e3e5c6fcdb2d06ff438beb7029}{}\label{class_main_1_1_ball_a707727e3e5c6fcdb2d06ff438beb7029}
+Beállítja a labda y tengely menti irányát az átvett paraméter szerint. 
+\begin{DoxyParams}{Parameters}
+{\em y} & A paraméter ami meghatározza az ydirection értékét. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Egyetem/\+I\+I. ev/\+I. felev/\+Java/\+H\+F Break Bricks/src/\+Main/Ball.\+java\end{DoxyCompactItemize}
